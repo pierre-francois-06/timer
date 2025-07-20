@@ -4,6 +4,7 @@ import { useTimerStore } from "./stores/TimerStore";
 import { useStartStopStore } from "./stores/StartStopStore";
 import { useStatusStore } from "./stores/StatusStore";
 import { useEffect, useRef } from "react";
+import audio from "/beep.mp3";
 
 function App() {
   const timeLeft = useTimerStore((state) => state.timeLeft);
@@ -43,7 +44,7 @@ function App() {
         <TimeSetter type="break" />
       </div>
       <TimeDisplay currentStatus={status} />
-      <audio id="beep" ref={audioRef} src="/beep.mp3" preload="auto" />
+      <audio id="beep" ref={audioRef} src={audio} preload="auto" />
     </>
   );
 }
