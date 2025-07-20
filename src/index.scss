@@ -1,0 +1,56 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+html {
+  background: linear-gradient(45deg, #1f4037 0%, #99f2c8 100%);
+  background-size: 200% 200%;
+}
+
+#time-setter-container {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.time-setter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  background-color: rgba(grey, 0.5);
+  padding: 1rem;
+  width: 10rem;
+
+  label {
+    text-transform: capitalize;
+  }
+
+  button {
+    padding: 0.4rem;
+    width: 2rem;
+  }
+}
+
+.time-display {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  border: 0.5rem solid rgba(grey, 0.6);
+  box-shadow: inset 0 0 1rem rgba(grey, 0.8);
+  padding: 1rem;
+  width: 10rem;
+
+  label {
+    text-transform: capitalize;
+  }
+
+  button {
+    padding: 0.4rem;
+    width: 5rem;
+  }
+}
